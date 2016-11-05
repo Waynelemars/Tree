@@ -17,6 +17,7 @@ public class Test {
 	bst.add("1");
 	
 	bst.inOrder(bst.getRoot());
+	System.out.println(bst.find("1").data);
 		
 		
 		
