@@ -7,9 +7,10 @@ public class Test {
 	BinaryTree bt = new BinaryTree();
 	BinaryTree sampleBT = bt.createSampleTree();
     
-	bt.inOrder(sampleBT.root);
-	bt.preOrder(sampleBT.root);
-	bt.postOrder(sampleBT.root);
+//	bt.inOrder(sampleBT.root.left);
+//	bt.preOrder(sampleBT.root);
+//	bt.postOrder(sampleBT.root);
+	bt.levelOrder(sampleBT.root);
 		
 		
 		

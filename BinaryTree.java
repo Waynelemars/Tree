@@ -1,5 +1,8 @@
 package Tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinaryTree {
 
 	public TreeNode root;
@@ -39,6 +42,25 @@ public class BinaryTree {
 		postOrder(subTree.left);
 		postOrder(subTree.right);
 		System.out.println(subTree.data);
+		
+	}
+	
+	
+	public void levelOrder(TreeNode subTree){
+		
+		Queue<TreeNode> q = new LinkedList<TreeNode>();
+		q.add(subTree);
+		while(!q.isEmpty()){
+			
+			TreeNode current = q.poll();
+			System.out.println(current.data);
+			if(current.left!=null){
+				q.add(current.left);
+			}
+			if(current.right!=null){
+				q.add(current.right);
+			}
+		}
 		
 	}
 	
