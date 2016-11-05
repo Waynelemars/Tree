@@ -10,7 +10,7 @@ public class Test {
 //	bt.inOrder(sampleBT.root.left);
 //	bt.preOrder(sampleBT.root);
 //	bt.postOrder(sampleBT.root);
-	bt.levelOrder(sampleBT.root);
+	bt.levelOrder(null);
 		
 		
 		

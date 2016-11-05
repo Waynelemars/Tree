@@ -48,7 +48,9 @@ public class BinaryTree {
 	
 	public void levelOrder(TreeNode subTree){
 		
+		if(subTree!=null){
 		Queue<TreeNode> q = new LinkedList<TreeNode>();
+		
 		q.add(subTree);
 		while(!q.isEmpty()){
 			
@@ -60,6 +62,7 @@ public class BinaryTree {
 			if(current.right!=null){
 				q.add(current.right);
 			}
+		}
 		}
 		
 	}
