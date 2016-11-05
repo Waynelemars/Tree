@@ -3,7 +3,7 @@ package Tree;
 public class TreeNode {
 
 
- String data;
+ public String data;
  public TreeNode left;
  public  TreeNode right;
  

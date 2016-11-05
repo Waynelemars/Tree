@@ -10,7 +10,13 @@ public class Test {
 //	bt.inOrder(sampleBT.root.left);
 //	bt.preOrder(sampleBT.root);
 //	bt.postOrder(sampleBT.root);
-	bt.levelOrder(null);
+	bt.levelOrder(sampleBT.getRoot());
+	BinarySearchTree bst = new BinarySearchTree();
+	bst.add("2");
+	bst.add("3");
+	bst.add("1");
+	
+	bst.inOrder(bst.getRoot());
 		
 		
 		
