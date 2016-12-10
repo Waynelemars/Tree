@@ -9,6 +9,42 @@ public class BinaryTree {
 	public BinaryTree(){
 		
 	}
+	//didn't solve it.
+	
+	public void printTreeFileStructure(TreeNode node,int level){
+		
+		if(node==null){
+			return;
+		}
+		
+		//this for loop make sure no matter where your nodes are, you will know the level of the node. 
+		for ( int i = 0; i < level; i++ ) {
+			System.out.print("   ");
+		}
+		
+		System.out.println("└"+node.data);
+		printTreeFileStructure(node.left,level+1);
+		printTreeFileStructure(node.right,level+1);
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	public int maxDepth(TreeNode root){
+		if(root == null){
+			return 0;
+		}
+		else{
+			return 1+Math.max(maxDepth(root.left),maxDepth(root.right));
+		}
+		
+		
+		
+	}
 	
 	public TreeNode getRoot(){
 		return root;
